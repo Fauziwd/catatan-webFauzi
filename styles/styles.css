@@ -1,0 +1,228 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    background-color: #dadde6;
+    color: #070974;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+.header {
+    background: rgb(5,119,47);
+    background: linear-gradient(315deg, rgba(5,119,47,1) 0%, rgba(58,156,41,1) 32%, rgba(109,193,95,1) 72%, rgba(135,193,125,1) 100%);
+    padding: 20px;
+}
+
+
+.header__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.header__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #d1d3d5;
+}
+
+/* Actions Bar */
+
+.actions {
+    background-color: #d0f3c6;
+    padding: 20px;
+}
+
+.actions__container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+      border: none;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #42a026;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  transition: all .6s ease;
+}
+
+.actions__container--spaced {
+    /* justify-content: space-between */
+    margin-top: 10px;
+}
+
+/* Form Inputs */
+
+.input {
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    color: rgb(17, 54, 6);
+    background-color: rgba(255, 255, 255, 0.5); /* warna latar belakang dengan opacity 50% */
+    border-radius: 10px; /* membuat elemen berbentuk bulat dengan radius 10px */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* memberikan efek bayangan pada elemen */
+    backdrop-filter: blur(10px); /* memberikan efek blur pada latar belakang elemen */
+}
+
+
+.dropdown {
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ffffff;
+    background: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-left: 175px;
+}
+
+.button {
+    background: linear-gradient(45deg, #9a9cff, #36d1dc);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button--secondary {
+    background: #888888;
+    border-bottom: 2px solid #717171;
+}
+
+.button--secondary:hover {
+    background: #6E6E6E;
+}
+
+/* Note editor */
+
+.title-input {
+    border: 1px solid #DEDFE0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    padding: .8rem;
+    width: 100%;
+}
+
+.body-input {
+    border: 1px solid #DEDFE0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: .8rem;
+    width: 100%;
+}
+
+/* Note List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #333333;
+    border: 1px solid #dedfe0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
+    background-color: rgba(255, 255, 255, 0.5); /* warna latar belakang dengan opacity 50% */
+    border-radius: 10px; /* membuat elemen berbentuk bulat dengan radius 10px */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* memberikan efek bayangan pada elemen */
+    backdrop-filter: blur(4px); /* memberikan efek blur pada latar belakang elemen */
+}
+
+
+.list-item:hover {
+    background: #eeeeee;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 3.2rem 0;
+}
